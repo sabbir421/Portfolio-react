@@ -4,6 +4,7 @@ import camera from '../../img/camera.png'
 import tour from '../../img/tour.png'
 import learn from '../../img/learnUp.png'
 import bike from '../../img/bike.png'
+import { NavLink } from 'react-router-dom';
 
 
 const Projects = () => {
@@ -14,9 +15,9 @@ const Projects = () => {
     <Card.Body>
       <Card.Title>Learn Up</Card.Title>
       <Card.Text>
-        Learn Up is an online learning platform it's created for react, node js and firebase 
+        Learn Up is an online learning platform this site create for online lerner. they can enroll course it's created for react, node js and firebase 
       </Card.Text>
-      <Button variant="primary" className='width-100px'>project Details</Button>
+      <NavLink to='/learn'><Button variant="primary" className='width-100px'>project Details</Button></NavLink>
     </Card.Body>
     
   </Card>
@@ -28,7 +29,7 @@ const Projects = () => {
         Tour Guide is a Tour egency Platform this platform created for tpur Lovers
         this Site created by react,node js, firebase and mongoDB
       </Card.Text>
-      <Button variant="primary" className='width-100px'>project Details</Button>
+      <NavLink to='/tour'><Button variant="primary" className='width-100px'>project Details</Button></NavLink>
     </Card.Body>
     
   </Card>
@@ -37,9 +38,9 @@ const Projects = () => {
     <Card.Body>
       <Card.Title>Camera World</Card.Title>
       <Card.Text>
-        Camera World is an online camera shop for all camera lovers it's created by react, node js mongogDb,and firebase
+        Camera World is an online camera shop for all camera lovers they can order here for latest camera it's created by react, node js mongogDb,and firebase
       </Card.Text>
-      <Button variant="primary" className='width-100px'>project Details</Button>
+      <NavLink to='/camera'><Button variant="primary" className='width-100px'>project Details</Button></NavLink>
     </Card.Body>
 
     
@@ -52,7 +53,7 @@ const Projects = () => {
         Bike Hunt is an online Bike Glary Pepole can see new Feature Bike from here and can get idea about marcket
         this site created by html, css, bottstrap, javaScript
       </Card.Text>
-      <Button variant="primary" className='width-100px'>project Details</Button>
+      <NavLink to='/bike'><Button variant="primary" className='width-100px'>project Details</Button></NavLink>
     </Card.Body>
    
   </Card>
